@@ -5,13 +5,16 @@ class CustomAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          'Rohit Chandra',
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 150, top: 30),
+      child: Row(
+        children: [
+          Text(
+            'Rohit Chandra',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+        ],
+      ),
     );
   }
 }

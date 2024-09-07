@@ -1,6 +1,6 @@
 name: portfolio_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: 'Rohit Portfolio'
 version: 0.1.0
 
 environment:
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -20,6 +21,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/svgIcons/
  
   
   fonts:
