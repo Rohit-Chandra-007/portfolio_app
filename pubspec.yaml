@@ -1,0 +1,33 @@
+name: portfolio_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+ 
+  
+  fonts:
+    - family: Console 
+      fonts:
+        - asset: assets/fonts/Inconsolata-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inconsolata-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inconsolata-Bold.ttf
+          weight: 700
