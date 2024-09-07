@@ -8,7 +8,7 @@ class HomePageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(
+    return const ResponsiveLayout(
       web: HomePageWeb(),
       mobile: HomePageMobile(),
     );
