@@ -17,7 +17,7 @@ class MyServicesSection extends StatelessWidget {
               padding: const EdgeInsets.only(top: 40, bottom: 70),
               width: double.infinity,
               child: Center(
-                child: Text(
+                child: SelectableText(
                   'My Service',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
@@ -27,10 +27,7 @@ class MyServicesSection extends StatelessWidget {
               shrinkWrap: true, // Important for SingleChildScrollView
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                crossAxisSpacing: 50,
-                mainAxisSpacing: 30
-              ),
+                  crossAxisCount: 3, crossAxisSpacing: 50, mainAxisSpacing: 30),
               children: const [
                 MyServiceWidget(),
                 MyServiceWidget(),
@@ -62,7 +59,7 @@ class MyServiceWidget extends StatelessWidget {
         const SizedBox(
           height: 12,
         ),
-        Text(
+        SelectableText(
           'Front End',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
@@ -70,12 +67,12 @@ class MyServiceWidget extends StatelessWidget {
           height: 12,
         ),
         Expanded(
-          child: Text(
+          child: SelectableText(
             'I am Nitish Kumar i have Excellent skill '
             'of web development and android development.  '
             'learner by YouTube. ',
             style: Theme.of(context).textTheme.labelMedium,
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.start,
           ),
         )
       ],

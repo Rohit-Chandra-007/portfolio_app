@@ -18,14 +18,14 @@ class InfoSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                SelectableText(
                   'Hello, I’m Rohit  \nFlutter Developer & Youtuber',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
                 const SizedBox(
                   height: 12,
                 ),
-                Text(
+                SelectableText(
                   'I am Rohit i have Excellent skill of web development'
                   ' and android development. as well as i share my development '
                   'experience with other learner by YouTube. ',
