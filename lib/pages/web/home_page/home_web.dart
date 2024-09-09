@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/widgets/appbar/custom_appbar.dart';
-import 'package:portfolio_app/widgets/info_section/info_section.dart';
-import 'package:portfolio_app/widgets/services_section/services.dart';
+import 'package:portfolio_app/widgets/desktop/appbar/custom_appbar.dart';
+import 'package:portfolio_app/widgets/desktop/info_section/info_section.dart';
+import 'package:portfolio_app/widgets/desktop/myskills/myskills.dart';
+import 'package:portfolio_app/widgets/desktop/services_section/services.dart';
 
 class HomePageWeb extends StatelessWidget {
   const HomePageWeb({super.key});
@@ -20,7 +21,8 @@ class HomePageWeb extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            MyServicesSection()
+            MyServicesSection(),
+            MySkillsSection()
           ],
         ),
       ),

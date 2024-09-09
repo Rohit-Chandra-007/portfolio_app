@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/configs/image_path.dart';
-import 'package:portfolio_app/widgets/buttons/primary_button.dart';
+import 'package:portfolio_app/widgets/desktop/buttons/primary_button.dart';
 
 class InfoSection extends StatelessWidget {
   const InfoSection({super.key});
