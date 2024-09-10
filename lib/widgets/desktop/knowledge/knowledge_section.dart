@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/programing/programing_skills.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/software/software_skills.dart';
+import 'package:portfolio_app/widgets/desktop/knowledge/language.dart';
+import 'package:portfolio_app/widgets/desktop/knowledge/technical.dart';
 
-class MySkillsSection extends StatelessWidget {
-  const MySkillsSection({super.key});
+
+class MyKnowledgeSection extends StatelessWidget {
+  const MyKnowledgeSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
         padding: const EdgeInsets.only(left: 150, right: 70, bottom: 60),
+        color: Theme.of(context).colorScheme.primaryContainer,
         child: Column(
           children: [
             Container(
@@ -16,7 +18,7 @@ class MySkillsSection extends StatelessWidget {
               width: double.infinity,
               child: Center(
                 child: Text(
-                  'Skills',
+                  'Knowledge',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
@@ -25,7 +27,7 @@ class MySkillsSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(child: ProgrammingSkillsSection()),
+                Expanded(child: TechnicalSection()),
                 Container(
                   width: 3,
                   height: 700,
@@ -33,10 +35,7 @@ class MySkillsSection extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primaryContainer,
                   ),
                 ),
-                const SizedBox(
-                  width: 20,
-                ),
-                Expanded(child: SoftwareSkillsSection()),
+                Expanded(child: LanguageSection()),
               ],
             )
           ],

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
+
 import 'package:portfolio_app/widgets/desktop/myskills/programing/circular_percentage_widget.dart';
 
 class ProgrammingSkillsSection extends StatelessWidget {
@@ -9,25 +9,20 @@ class ProgrammingSkillsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SelectableText(
+        Text(
           'Programing',
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-        const SizedBox(height: 12,),
-
-        GridView(
+        const SizedBox(
+          height: 12,
+        ),
+        GridView.builder(
           shrinkWrap: true, // Important for SingleChildScrollView
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,mainAxisSpacing: 20),
-          children: const [
-            CircularPercentageWidget(),
-            CircularPercentageWidget(),
-            CircularPercentageWidget(),
-            CircularPercentageWidget(),
-            CircularPercentageWidget(),
-            CircularPercentageWidget(),
-          ],
+              crossAxisCount: 2, mainAxisSpacing: 20),
+          itemCount: 6,
+          itemBuilder: (context, index) => const CircularPercentageWidget(),
         ),
       ],
     );

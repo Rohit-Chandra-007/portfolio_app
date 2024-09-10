@@ -23,19 +23,13 @@ class MyServicesSection extends StatelessWidget {
                 ),
               ),
             ),
-            GridView(
+            GridView.builder(
               shrinkWrap: true, // Important for SingleChildScrollView
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3, crossAxisSpacing: 50, mainAxisSpacing: 30),
-              children: const [
-                MyServiceWidget(),
-                MyServiceWidget(),
-                MyServiceWidget(),
-                MyServiceWidget(),
-                MyServiceWidget(),
-                MyServiceWidget(),
-              ],
+              itemCount: 6,
+              itemBuilder: (context, index) => const MyServiceWidget(),
             ),
           ],
         ),

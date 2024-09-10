@@ -7,11 +7,10 @@ class LinearPercentageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-
         children: [
           Text(
             'Ms Office',
@@ -21,7 +20,6 @@ class LinearPercentageWidget extends StatelessWidget {
             height: 12,
           ),
           LinearPercentIndicator(
-
             trailing: Text(
               '80%',
               style: Theme.of(context).textTheme.labelMedium,
@@ -37,6 +35,5 @@ class LinearPercentageWidget extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }

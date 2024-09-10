@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/programing/circular_percentage_widget.dart';
 import 'package:portfolio_app/widgets/desktop/myskills/software/linear_percentage_widget.dart';
 
 class SoftwareSkillsSection extends StatelessWidget {
@@ -19,36 +17,14 @@ class SoftwareSkillsSection extends StatelessWidget {
         const SizedBox(
           height: 12,
         ),
-        ListView(
+        ListView.builder(
           shrinkWrap: true, // Important for SingleChildScrollView
           physics: const NeverScrollableScrollPhysics(),
 
-          children: const [
-            LinearPercentageWidget(),
-            SizedBox(
-              height: 36,
-            ),
-            LinearPercentageWidget(),
-            SizedBox(
-              height: 36,
-            ),
-            LinearPercentageWidget(),
-            SizedBox(
-              height: 36,
-            ),
-            LinearPercentageWidget(),
-            SizedBox(
-              height: 36,
-            ),
-            LinearPercentageWidget(),
-            SizedBox(
-              height: 36,
-            ),
-            LinearPercentageWidget(),
-            SizedBox(
-              height: 36,
-            ),
-          ],
+          itemCount: 6,
+          itemBuilder: (BuildContext context, int index) {
+            return const LinearPercentageWidget();
+          },
         ),
       ],
     );
