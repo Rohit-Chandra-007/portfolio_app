@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/widgets/common_widgets/common_circular_indicator.dart';
 import 'package:portfolio_app/widgets/desktop/knowledge/hobby_section.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/software/linear_percentage_widget.dart';
 
 class LanguageSection extends StatelessWidget {
   const LanguageSection({super.key});
@@ -32,13 +31,19 @@ class LanguageSection extends StatelessWidget {
                 Row(
                   children: List.generate(
                     7,
-                    (index) => CommonCircularIndicator(isFilled: true),
+                    (index) => const Padding(
+                      padding: EdgeInsets.only(right: 16),
+                      child: CommonCircularIndicator(isFilled: true),
+                    ),
                   ),
                 ),
                 Row(
                   children: List.generate(
                     3,
-                    (index) => CommonCircularIndicator(isFilled: false),
+                    (index) => const Padding(
+                      padding: EdgeInsets.only(right: 16),
+                      child: CommonCircularIndicator(isFilled: false),
+                    ),
                   ),
                 )
               ],
@@ -55,18 +60,24 @@ class LanguageSection extends StatelessWidget {
                 Row(
                   children: List.generate(
                     7,
-                    (index) => CommonCircularIndicator(isFilled: true),
+                    (index) => const Padding(
+                      padding: EdgeInsets.only(right: 16),
+                      child: CommonCircularIndicator(isFilled: true),
+                    ),
                   ),
                 ),
                 Row(
                   children: List.generate(
                     3,
-                    (index) => CommonCircularIndicator(isFilled: false),
+                    (index) => const Padding(
+                      padding: EdgeInsets.only(right: 16),
+                      child: CommonCircularIndicator(isFilled: false),
+                    ),
                   ),
                 )
               ],
             ),
-            HobbySection(),
+            const HobbySection(),
           ],
         )
       ],

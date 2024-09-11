@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/programing/programing_skills.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/software/software_skills.dart';
+import 'package:portfolio_app/widgets/desktop/experience/work_column.dart';
+import 'package:portfolio_app/widgets/desktop/experience/project_column.dart';
 
-class MySkillsSection extends StatelessWidget {
-  const MySkillsSection({super.key});
+class ExperienceSection extends StatelessWidget {
+  const ExperienceSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MySkillsSection extends StatelessWidget {
               width: double.infinity,
               child: Center(
                 child: Text(
-                  'Skills',
+                  'Experience',
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
@@ -25,7 +25,7 @@ class MySkillsSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Expanded(child: ProgrammingSkillsSection()),
+                const Expanded(child: WorkColumn()),
                 Container(
                   width: 3,
                   height: 700,
@@ -36,10 +36,11 @@ class MySkillsSection extends StatelessWidget {
                 const SizedBox(
                   width: 20,
                 ),
-                const Expanded(child: SoftwareSkillsSection()),
+                const Expanded(child: ProjectColumn()),
               ],
             )
           ],
         ));
+    
   }
 }

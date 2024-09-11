@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/widgets/common_widgets/common_circular_indicator.dart';
-import 'package:portfolio_app/widgets/desktop/myskills/software/linear_percentage_widget.dart';
+
 
 class HobbySection extends StatelessWidget {
   const HobbySection({super.key});
@@ -18,14 +18,14 @@ class HobbySection extends StatelessWidget {
         const SizedBox(
           height: 12,
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             HobbyWidget(),
             HobbyWidget(),
           ],
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             HobbyWidget(),
@@ -46,8 +46,8 @@ class HobbyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CommonCircularIndicator(isFilled: true),
-        SizedBox(
+        const CommonCircularIndicator(isFilled: true),
+        const SizedBox(
           width: 10,
         ),
         Text(

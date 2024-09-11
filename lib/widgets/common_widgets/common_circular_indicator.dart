@@ -7,7 +7,6 @@ class CommonCircularIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       width: 24,
       height: 24,
       decoration: ShapeDecoration(

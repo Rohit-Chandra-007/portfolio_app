@@ -27,7 +27,7 @@ class MyKnowledgeSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(child: TechnicalSection()),
+                const Expanded(child: TechnicalSection()),
                 Container(
                   width: 3,
                   height: 700,
@@ -35,7 +35,7 @@ class MyKnowledgeSection extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primaryContainer,
                   ),
                 ),
-                Expanded(child: LanguageSection()),
+                const Expanded(child: LanguageSection()),
               ],
             )
           ],
