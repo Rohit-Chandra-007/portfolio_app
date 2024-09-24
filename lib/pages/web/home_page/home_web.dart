@@ -26,7 +26,7 @@ class HomePageWeb extends StatelessWidget {
             MyServicesSection(),
             MySkillsSection(),
             MyKnowledgeSection(),
-            ExperienceSection()
+            ExperienceSection(),
           ],
         ),
       ),

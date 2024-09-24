@@ -10,7 +10,7 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => onTap,
+      onTap: onTap,
       child: HoverEffect(builder: (isHover) {
         return Container(
           padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 6),
